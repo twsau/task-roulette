@@ -17,6 +17,7 @@ export const Header: React.FC = () => {
         value={newTaskText}
       />
       <Button
+        disabled={!newTaskText}
         onClick={() => {
           addTask(newTaskText);
           setNewTaskText("");
