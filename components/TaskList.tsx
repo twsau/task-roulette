@@ -6,5 +6,5 @@ import { Task } from "./Task";
 export const TaskList: React.FC = () => {
   const { tasks } = useGlobalState();
 
-  return <div>{tasks.map(Task)}</div>;
+  return <div className="flex flex-col gap-3 px-5">{tasks.map(Task)}</div>;
 };
