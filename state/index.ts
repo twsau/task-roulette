@@ -1,9 +1,9 @@
 import { create } from "zustand";
 
 interface GlobalState {
-  todos: TODO[];
+  tasks: Task[];
 }
 
 export const useGlobalState = create<GlobalState>()(() => ({
-  todos: [],
+  tasks: [],
 }));

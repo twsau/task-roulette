@@ -1,4 +1,4 @@
-interface TODO {
+interface Task {
   text: string;
   done: boolean;
 }
