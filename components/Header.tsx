@@ -10,21 +10,23 @@ export const Header: React.FC = () => {
   const [newTaskText, setNewTaskText] = useState("");
 
   return (
-    <header className="flex items-center gap-5 p-5">
-      <Input
-        onChange={(e) => setNewTaskText(e.target.value)}
-        placeholder="Do the things..."
-        value={newTaskText}
-      />
-      <Button
-        disabled={!newTaskText}
-        onClick={() => {
-          addTask(newTaskText);
-          setNewTaskText("");
-        }}
-      >
-        <PlusIcon />
-      </Button>
+    <header className="p-5">
+      <form className="flex items-center gap-5">
+        <Input
+          onChange={(e) => setNewTaskText(e.target.value)}
+          placeholder="Do the things..."
+          value={newTaskText}
+        />
+        <Button
+          disabled={!newTaskText}
+          onClick={() => {
+            addTask(newTaskText);
+            setNewTaskText("");
+          }}
+        >
+          <PlusIcon />
+        </Button>
+      </form>
     </header>
   );
 };
