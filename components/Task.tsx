@@ -25,7 +25,7 @@ export const Task: React.FC<Task> = (task) => (
       onClick={() => toggleTask(task.id)}
       variant="outline"
     >
-      {task.text}
+      <span className={task.done ? "line-through" : ""}>{task.text}</span>
       {task.done && <CheckIcon />}
     </Button>
     <AlertDialog>
