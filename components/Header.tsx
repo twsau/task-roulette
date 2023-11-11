@@ -13,11 +13,13 @@ export const Header: React.FC = () => {
     <header className="p-5">
       <form className="flex items-center gap-5">
         <Input
+          className="h-[42px]"
           onChange={(e) => setNewTaskText(e.target.value)}
-          placeholder="Do the things..."
+          placeholder="Place your bets..."
           value={newTaskText}
         />
         <Button
+          className="transition-all"
           disabled={!newTaskText}
           onClick={() => {
             addTask(newTaskText);

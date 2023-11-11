@@ -16,7 +16,10 @@ import {
 import { deleteTask } from "@/state/actions/deleteTask";
 
 export const Task: React.FC<Task> = (task) => (
-  <div className="flex items-center gap-3" key={`task-${task.id}`}>
+  <div
+    className="flex items-center gap-5 animate-in fade-in-0 slide-in-from-top-5"
+    key={`task-${task.id}`}
+  >
     <Button
       className={cn(
         task.done ? "bg-muted text-muted-foreground" : "",
