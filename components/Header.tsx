@@ -32,7 +32,7 @@ export const Header: React.FC = () => {
           </SheetHeader>
         </SheetContent>
       </Sheet>
-      <form className="flex w-full items-center gap-5">
+      <form className="flex w-full items-center gap-3">
         <Input
           className="h-[42px]"
           onChange={(e) => setNewTaskText(e.target.value)}

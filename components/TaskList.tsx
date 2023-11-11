@@ -37,12 +37,12 @@ export const TaskList: React.FC = () => {
                 "flex w-full justify-between p-5"
               )}
               onClick={() => toggleTask(task.id)}
-              variant="outline"
+              variant="ghost"
             >
               <span className={task.done ? "line-through" : ""}>
                 {task.text}
               </span>
-              {task.done && <CheckIcon />}
+              {task.done && <CheckIcon className="text-green-400" />}
             </Button>
             <AlertDialog>
               <AlertDialogTrigger asChild>
