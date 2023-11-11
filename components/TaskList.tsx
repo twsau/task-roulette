@@ -29,7 +29,7 @@ export const TaskList: React.FC = () => {
       onChange={setTasks}
       renderItem={(task) => (
         <SortableList.Item id={task.id}>
-          <div className="flex items-center gap-5 px-5 animate-in fade-in-0 slide-in-from-top-5">
+          <div className="flex items-center gap-3 px-5 animate-in fade-in-0 slide-in-from-top-5">
             <SortableList.DragHandle />
             <Button
               className={cn(

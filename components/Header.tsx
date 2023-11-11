@@ -18,10 +18,10 @@ export const Header: React.FC = () => {
   const [newTaskText, setNewTaskText] = useState("");
 
   return (
-    <header className="flex items-center gap-5 p-5">
+    <header className="flex items-center gap-3 p-5">
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline">
+          <Button variant="ghost">
             <HamburgerMenuIcon />
           </Button>
         </SheetTrigger>
