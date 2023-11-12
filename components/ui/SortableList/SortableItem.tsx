@@ -6,7 +6,7 @@ import type {
 } from "@dnd-kit/core";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { DragHandleDots2Icon } from "@radix-ui/react-icons";
+import { DragHandleHorizontalIcon } from "@radix-ui/react-icons";
 import { Button } from "../button";
 
 interface Props {
@@ -64,7 +64,8 @@ export function DragHandle() {
 
   return (
     <Button {...attributes} {...listeners} ref={ref} variant="ghost">
-      <DragHandleDots2Icon />
+      {/* <DragHandleDots2Icon /> */}
+      <DragHandleHorizontalIcon />
     </Button>
   );
 }

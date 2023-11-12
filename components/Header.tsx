@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
-import { HamburgerMenuIcon, PlusIcon, TrashIcon } from "@radix-ui/react-icons";
+import { GearIcon, PlusIcon, TrashIcon } from "@radix-ui/react-icons";
 import { addTask } from "@/state/actions/addTask";
 import {
   Sheet,
@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="ghost">
-            <HamburgerMenuIcon />
+            <GearIcon />
           </Button>
         </SheetTrigger>
         <SheetContent side="left">
