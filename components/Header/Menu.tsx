@@ -14,10 +14,11 @@ import {
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "@radix-ui/react-alert-dialog";
-import { AlertDialogFooter, AlertDialogHeader } from "../ui/alert-dialog";
+} from "../ui/alert-dialog";
 import { setTasks } from "@/state/actions/tasks/setTasks";
 import { Button } from "../ui/button";
 import { GearIcon, TrashIcon } from "@radix-ui/react-icons";
