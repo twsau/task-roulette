@@ -1,7 +1,7 @@
 "use client";
 
 import { useGlobalState } from "@/state";
-import { toggleTask } from "@/state/actions/toggleTask";
+import { toggleTask } from "@/state/actions/tasks/toggleTask";
 import { Button } from "./ui/button";
 import { CheckIcon, TrashIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
@@ -16,9 +16,9 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "./ui/alert-dialog";
-import { deleteTask } from "@/state/actions/deleteTask";
+import { deleteTask } from "@/state/actions/tasks/deleteTask";
 import { SortableList } from "./ui/SortableList";
-import { setTasks } from "@/state/actions/setTasks";
+import { setTasks } from "@/state/actions/tasks/setTasks";
 
 export const TaskList: React.FC = () => {
   const { tasks } = useGlobalState();

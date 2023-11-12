@@ -1,4 +1,4 @@
-import { useGlobalState } from "..";
+import { useGlobalState } from "@/state";
 
 export const toggleTask = (id: string) =>
   useGlobalState.setState((state) => {

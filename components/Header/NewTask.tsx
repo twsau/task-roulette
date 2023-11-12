@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
 import { PlusIcon } from "@radix-ui/react-icons";
-import { addTask } from "@/state/actions/addTask";
+import { addTask } from "@/state/actions/tasks/addTask";
 import { Input } from "../ui/input";
 
 export const NewTask: React.FC = () => {

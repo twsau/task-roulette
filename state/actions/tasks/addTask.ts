@@ -1,4 +1,4 @@
-import { useGlobalState } from "..";
+import { useGlobalState } from "@/state";
 import { v4 as uuid } from "uuid";
 
 export const addTask = (newTaskText: string) =>
