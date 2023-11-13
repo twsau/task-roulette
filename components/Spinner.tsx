@@ -46,7 +46,7 @@ export const Spinner: React.FC = () => {
         data={data}
       />
       <div className="flex gap-3">
-        <Button disabled={!credits} onClick={spin}>
+        <Button disabled={!credits || spinning} onClick={spin}>
           Spin
         </Button>
         <Button disabled={spinning} onClick={router.back}>
